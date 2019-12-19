@@ -1,0 +1,68 @@
+h1 {
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.contenidohergilrau {
+  display: flex;
+}
+.contenidohergilrau > #caja1hergilrau {
+  flex-grow: 1;
+  border: solid 1px #000;
+  background-color: #ccc;
+  padding: 5px;
+  margin-right: 10px;
+  float: left;
+  border: 1px solid gold;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: left;
+  color: #0d6d32;
+}
+.contenidohergilrau > #caja2hergilrau {
+  flex-grow: 1;
+  border: solid 1px #9393da;
+  background-color: #da7ad5;
+  padding: 5px;
+  float: left;
+  border: 1px dashed grey;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: left;
+  color: #0d6d32;
+}
+
+@media screen and (max-width: 500px) {
+  .contenidohergilrau {
+    float: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.menuhergilrau {
+  overflow: hidden;
+  background-color: lightcoral;
+}
+.menuhergilrau * {
+  box-sizing: border-box;
+}
+.menuhergilrau > a {
+  float: left;
+  display: block;
+  color: lightcyan;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 450px) {
+  .menuhergilrau a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=hergilrauhojaestilos_ej2hergilrau.css.map */

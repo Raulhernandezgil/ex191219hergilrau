@@ -1,0 +1,65 @@
+h1{
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+}
+@mixin mixinhergilrauej2($pixeles,$estilo,$color){
+    $colorTex: rgb(13, 109, 50);
+    border: $pixeles $estilo $color;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: left;
+    color: $colorTex;
+}
+.contenidohergilrau{
+    display: flex;
+    > #caja1hergilrau {
+        flex-grow: 1;
+        border: solid 1px #000;
+        background-color: #ccc;
+        padding: 5px;
+        margin-right: 10px;
+        float:left;
+        @include mixinhergilrauej2( 1px, solid, gold);
+    }   
+    > #caja2hergilrau {
+        flex-grow: 1;
+        border: solid 1px rgb(147, 147, 218);
+        background-color: rgb(218, 122, 213);
+        padding: 5px;
+        float:left;
+        @include mixinhergilrauej2( 1px, dashed, grey);
+    }
+}
+
+@media screen and (max-width:500px){
+    .contenidohergilrau{
+        float:none;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.menuhergilrau{
+    *{
+        box-sizing: border-box;
+    }
+    overflow: hidden;
+    background-color: lightcoral;
+    > a{
+        float: left;
+        display: block;
+        color: lightcyan;
+        text-align: center;
+        padding: 20px;
+        text-decoration: none;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 450px){
+    .menuhergilrau a{
+        float: none;
+        width: 100%;
+    }
+}
